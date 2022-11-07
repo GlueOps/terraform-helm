@@ -13,6 +13,8 @@ global:
   # per component.
   imageK8S: "hashicorp/terraform-k8s:1.1.1"
 
+  terraform_cloud_organization_name: ""
+
 # syncWorkspace will run the workspace sync process to sync K8S Workspaces with
 # Terraform Cloud workspaces.
 #

@@ -36,6 +36,8 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.name
+            - name: TF_ORG
+              value: "{{ .Values.global.terraform_cloud_organization_name }}"
             - name: OPERATOR_NAME
               value: "terraform-k8s"
             {{- if .Values.syncWorkspace.terraformVersion }}
